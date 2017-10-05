@@ -87,6 +87,13 @@ static const CGFloat kAnchorViewWidth = 1000;
     if (!_swipeableView) {
         return;
     }
+    
+    // Add this if you want single touch on card
+    if ([recognizer view] != [_swipeableView topView]) {
+        return;
+    }
+    
+    
     CGPoint translation = [recognizer translationInView:_containerView];
     CGPoint location = [recognizer locationInView:_containerView];
     CGPoint velocity = [recognizer velocityInView:_containerView];
