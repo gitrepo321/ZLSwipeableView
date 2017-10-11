@@ -327,4 +327,8 @@
     [_viewManagers removeObjectForKey:[NSValue valueWithNonretainedObject:view]];
 }
 
+-(NSInteger)getNumberOfCards {
+    return self.containerView.subviews.count;
+}
+
 @end

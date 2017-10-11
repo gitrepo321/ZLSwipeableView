@@ -134,4 +134,6 @@ typedef NS_ENUM(NSUInteger, ZLSwipeableViewDirection) {
 
 - (void)swipeTopViewFromPoint:(CGPoint)point inDirection:(CGVector)directionVector;
 
+
+-(NSInteger)getNumberOfCards;
 @end
